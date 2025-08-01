@@ -1,0 +1,702 @@
+{
+    "ChatCommand": "buyraid",
+    "RequiresOxidePermission": false,
+    "Debug": false,
+    "Colors": {
+        "ModalBackground": "0.05 0.1 0.2 0.98",
+        "TitleBarBackground": "0.1 0.2 0.4 1.0",
+        "TitleBarText": "1 1 1 1",
+        "XButtonBackground": "0.8 0.2 0.2 0.9",
+        "XButtonText": "1 1 1 1",
+        "LeftPanelBackground": "0.05 0.1 0.25 0.95",
+        "DifficultyButtonActiveBackground": "0.2 0.5 0.9 1.0",
+        "DifficultyButtonInactiveBackground": "0.1 0.3 0.7 0.8",
+        "DifficultyButtonText": "1 1 1 1",
+        "CloseButtonBackground": "0.8 0.2 0.2 0.9",
+        "CloseButtonText": "1 1 1 1",
+        "MiddlePanelBackground": "0.08 0.15 0.3 0.95",
+        "BasePanelActiveBackground": "0.15 0.45 0.85 1.0",
+        "BasePanelInactiveBackground": "0.1 0.3 0.7 0.8",
+        "BasePanelNameText": "1 1 1 1",
+        "BasePanelDescText": "0.9 0.9 0.9 1",
+        "RandomButtonBackground": "0.2 0.6 0.2 0.9",
+        "RightPanelBackground": "0.05 0.12 0.25 0.95",
+        "RightPanelDescText": "0.9 0.9 0.9 1",
+        "PurchaseButtonBackground": "0.2 0.6 0.2 0.9",
+        "PurchaseButtonText": "1 1 1 1",
+        "ScrollbarHandleColor": "0.6 0.6 0.6 0.8",
+        "ScrollbarHighlightColor": "0.6 0.6 0.6 0.8",
+        "ScrollbarPressedColor": "0.6 0.6 0.6 0.8",
+        "ScrollbarTrackColor": "0.2 0.2 0.2 0.3"
+    },
+    "DifficultyPermissions": {
+        "Easy": {
+            "DifficultyActivate": true,
+            "RequiresDifficultyPermission": false
+        },
+        "Expert": {
+            "DifficultyActivate": true,
+            "RequiresDifficultyPermission": false
+        },
+        "Hard": {
+            "DifficultyActivate": true,
+            "RequiresDifficultyPermission": false
+        },
+        "Medium": {
+            "DifficultyActivate": true,
+            "RequiresDifficultyPermission": false
+        },
+        "Nightmare": {
+            "DifficultyActivate": true,
+            "RequiresDifficultyPermission": false
+        }
+    },
+    "BuyButtonPermissions": {
+        "RequiresBuyRandomPermission": false,
+        "RequiresBuySpecificPermission": false
+    },
+    "ServerPanelConfig": {
+        "EnableIntegration": false,
+        "ServerPanelOnly": false,
+        "EnableHeaderFields": false
+    },
+    "Bases": {
+        "EasyCM1": {
+            "DisplayName": "EasyCM1",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/EasyCM1.jpg",
+            "NotBuyable": false
+        },
+        "EasyCM2": {
+            "DisplayName": "EasyCM2",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/EasyCM2.jpg",
+            "NotBuyable": false
+        },
+        "EasyCM3": {
+            "DisplayName": "EasyCM3",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/EasyCM3.jpg",
+            "NotBuyable": false
+        },
+        "EasyCM4": {
+            "DisplayName": "EasyCM4",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/EasyCM4.jpg",
+            "NotBuyable": false
+        },
+        "EasyCM5": {
+            "DisplayName": "EasyCM5",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/EasyCM5.jpg",
+            "NotBuyable": false
+        },
+        "ExpertCM1": {
+            "DisplayName": "ExpertCM1",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/ExpertCM1.jpg",
+            "NotBuyable": false
+        },
+        "ExpertCM2": {
+            "DisplayName": "ExpertCM2",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/ExpertCM2.jpg",
+            "NotBuyable": false
+        },
+        "ExpertCM3": {
+            "DisplayName": "ExpertCM3",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/ExpertCM3.jpg",
+            "NotBuyable": false
+        },
+        "ExpertCM4": {
+            "DisplayName": "ExpertCM4",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/ExpertCM4.jpg",
+            "NotBuyable": false
+        },
+        "ExpertCM5": {
+            "DisplayName": "ExpertCM5",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/ExpertCM5.jpg",
+            "NotBuyable": false
+        },
+        "HardCM1": {
+            "DisplayName": "HardCM1",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/HardCM1.jpg",
+            "NotBuyable": false
+        },
+        "HardCM2": {
+            "DisplayName": "HardCM2",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/HardCM2.jpg",
+            "NotBuyable": false
+        },
+        "HardCM3": {
+            "DisplayName": "HardCM3",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/HardCM3.jpg",
+            "NotBuyable": false
+        },
+        "HardCM4": {
+            "DisplayName": "HardCM4",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/HardCM4.jpg",
+            "NotBuyable": false
+        },
+        "HardCM5": {
+            "DisplayName": "HardCM5",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/HardCM5.jpg",
+            "NotBuyable": false
+        },
+        "MediumCM1": {
+            "DisplayName": "MediumCM1",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/MediumCM1.jpg",
+            "NotBuyable": false
+        },
+        "MediumCM2": {
+            "DisplayName": "MediumCM2",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/MediumCM2.jpg",
+            "NotBuyable": false
+        },
+        "MediumCM3": {
+            "DisplayName": "MediumCM3",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/MediumCM3.jpg",
+            "NotBuyable": false
+        },
+        "MediumCM4": {
+            "DisplayName": "MediumCM4",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/MediumCM4.jpg",
+            "NotBuyable": false
+        },
+        "MediumCM5": {
+            "DisplayName": "MediumCM5",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/MediumCM5.jpg",
+            "NotBuyable": false
+        },
+        "NightmareCM1": {
+            "DisplayName": "NightmareCM1",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/NightmareCM1.jpg",
+            "NotBuyable": false
+        },
+        "NightmareCM2": {
+            "DisplayName": "NightmareCM2",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/NightmareCM2.jpg",
+            "NotBuyable": false
+        },
+        "NightmareCM3": {
+            "DisplayName": "NightmareCM3",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/NightmareCM3.jpg",
+            "NotBuyable": false
+        },
+        "NightmareCM4": {
+            "DisplayName": "NightmareCM4",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/NightmareCM4.jpg",
+            "NotBuyable": false
+        },
+        "NightmareCM5": {
+            "DisplayName": "NightmareCM5",
+            "Description": "",
+            "Credit": "Bocia",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/bocia/NightmareCM5.jpg",
+            "NotBuyable": false
+        },
+        "resort-nightmare": {
+            "DisplayName": "resort-nightmare",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/resort-nightmare.jpg",
+            "NotBuyable": false
+        },
+        "santa1+": {
+            "DisplayName": "santa1+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa1+.jpg",
+            "NotBuyable": false
+        },
+        "santa10+": {
+            "DisplayName": "santa10+",
+            "Description": "https://images.feelingrusty.com/images/RaidSelector/xmas/santa10+.jpg",
+            "Credit": "Trapbox",
+            "ImageUrl": "",
+            "NotBuyable": false
+        },
+        "santa11+": {
+            "DisplayName": "santa11+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa11+.jpg",
+            "NotBuyable": false
+        },
+        "santa12+": {
+            "DisplayName": "santa12+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa12+.jpg",
+            "NotBuyable": false
+        },
+        "santa13+": {
+            "DisplayName": "santa13+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa13+.jpg",
+            "NotBuyable": false
+        },
+        "santa14+": {
+            "DisplayName": "santa14+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa14+.jpg",
+            "NotBuyable": false
+        },
+        "santa15+": {
+            "DisplayName": "santa15+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa15+.jpg",
+            "NotBuyable": false
+        },
+        "santa16+": {
+            "DisplayName": "santa16+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa16+.jpg",
+            "NotBuyable": false
+        },
+        "santa17+": {
+            "DisplayName": "santa17+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa17+.jpg",
+            "NotBuyable": false
+        },
+        "santa18+": {
+            "DisplayName": "santa18+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa18+.jpg",
+            "NotBuyable": false
+        },
+        "santa19+": {
+            "DisplayName": "santa19+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa19+.jpg",
+            "NotBuyable": false
+        },
+        "santa2+": {
+            "DisplayName": "santa2+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa2+.jpg",
+            "NotBuyable": false
+        },
+        "santa20+": {
+            "DisplayName": "santa20+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa20+.jpg",
+            "NotBuyable": false
+        },
+        "santa21+": {
+            "DisplayName": "santa21+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa21+.jpg",
+            "NotBuyable": false
+        },
+        "santa22+": {
+            "DisplayName": "santa22+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa22+.jpg",
+            "NotBuyable": false
+        },
+        "santa23+": {
+            "DisplayName": "santa23+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa23+.jpg",
+            "NotBuyable": false
+        },
+        "santa24+": {
+            "DisplayName": "santa24+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa24+.jpg",
+            "NotBuyable": false
+        },
+        "santa25+": {
+            "DisplayName": "santa25+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa25+.jpg",
+            "NotBuyable": false
+        },
+        "santa26+": {
+            "DisplayName": "santa26+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa26+.jpg",
+            "NotBuyable": false
+        },
+        "santa27+": {
+            "DisplayName": "santa27+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa27+.jpg",
+            "NotBuyable": false
+        },
+        "santa28+": {
+            "DisplayName": "santa28+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa28+.jpg",
+            "NotBuyable": false
+        },
+        "santa29+": {
+            "DisplayName": "santa29+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa29+.jpg",
+            "NotBuyable": false
+        },
+        "santa3+": {
+            "DisplayName": "santa3+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa3+.jpg",
+            "NotBuyable": false
+        },
+        "santa30+": {
+            "DisplayName": "santa30+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa30+.jpg",
+            "NotBuyable": false
+        },
+        "santa31+": {
+            "DisplayName": "santa31+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa31+.jpg",
+            "NotBuyable": false
+        },
+        "santa32+": {
+            "DisplayName": "santa32+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa32+.jpg",
+            "NotBuyable": false
+        },
+        "santa33+": {
+            "DisplayName": "santa33+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa33+.jpg",
+            "NotBuyable": false
+        },
+        "santa34+": {
+            "DisplayName": "santa34+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa34+.jpg",
+            "NotBuyable": false
+        },
+        "santa35+": {
+            "DisplayName": "santa35+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa35+.jpg",
+            "NotBuyable": false
+        },
+        "santa36+": {
+            "DisplayName": "santa36+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa36+.jpg",
+            "NotBuyable": false
+        },
+        "santa38+": {
+            "DisplayName": "santa38+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa38+.jpg",
+            "NotBuyable": false
+        },
+        "santa39": {
+            "DisplayName": "santa39",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa39.jpg",
+            "NotBuyable": false
+        },
+        "santa4": {
+            "DisplayName": "santa4",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa4.jpg",
+            "NotBuyable": false
+        },
+        "santa4+": {
+            "DisplayName": "santa4+",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "",
+            "NotBuyable": false
+        },
+        "santa40": {
+            "DisplayName": "santa40",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa40.jpg",
+            "NotBuyable": false
+        },
+        "santa41": {
+            "DisplayName": "santa41",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa41.jpg",
+            "NotBuyable": false
+        },
+        "santa42": {
+            "DisplayName": "santa42",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa42.jpg",
+            "NotBuyable": false
+        },
+        "santa43": {
+            "DisplayName": "santa43",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa43.jpg",
+            "NotBuyable": false
+        },
+        "santa5+": {
+            "DisplayName": "santa5+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa5+.jpg",
+            "NotBuyable": false
+        },
+        "santa6+": {
+            "DisplayName": "santa6+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa6+.jpg",
+            "NotBuyable": false
+        },
+        "santa7+": {
+            "DisplayName": "santa7+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa7+.jpg",
+            "NotBuyable": false
+        },
+        "santa8+": {
+            "DisplayName": "santa8+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa8+.jpg",
+            "NotBuyable": false
+        },
+        "santa9+": {
+            "DisplayName": "santa9+",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/santa9+.jpg",
+            "NotBuyable": false
+        },
+        "xmas-town-expert": {
+            "DisplayName": "xmas-town-expert",
+            "Description": "",
+            "Credit": "Trapbox",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/trapbox/xmas-town-expert.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy1s": {
+            "DisplayName": "xmaseasy1s",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy1s.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy2": {
+            "DisplayName": "xmaseasy2",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy2.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy3": {
+            "DisplayName": "xmaseasy3",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy3.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy4": {
+            "DisplayName": "xmaseasy4",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy4.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy5": {
+            "DisplayName": "xmaseasy5",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy5.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasy6": {
+            "DisplayName": "xmaseasy6",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmaseasy6.jpg",
+            "NotBuyable": false
+        },
+        "xmaseasyeasy5": {
+            "DisplayName": "xmaseasyeasy5",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "",
+            "NotBuyable": false
+        },
+        "xmasexpert1": {
+            "DisplayName": "xmasexpert1",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasexpert1.jpg",
+            "NotBuyable": false
+        },
+        "xmasexpert2": {
+            "DisplayName": "xmasexpert2",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasexpert2.jpg",
+            "NotBuyable": false
+        },
+        "xmasexpert3": {
+            "DisplayName": "xmasexpert3",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/uncredited/xmasexpert3.jpg",
+            "NotBuyable": false
+        },
+        "xmashard1s": {
+            "DisplayName": "xmashard1s",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmashard1s.jpg",
+            "NotBuyable": false
+        },
+        "xmashard2s": {
+            "DisplayName": "xmashard2s",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmashard2s.jpg",
+            "NotBuyable": false
+        },
+        "xmashard3": {
+            "DisplayName": "xmashard3",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmashard3.jpg",
+            "NotBuyable": false
+        },
+        "xmashard4": {
+            "DisplayName": "xmashard4",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/uncredited/xmashard4.jpg",
+            "NotBuyable": false
+        },
+        "xmasmedium1": {
+            "DisplayName": "xmasmedium1",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasmedium1.jpg",
+            "NotBuyable": false
+        },
+        "xmasmedium2": {
+            "DisplayName": "xmasmedium2",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasmedium2.jpg",
+            "NotBuyable": false
+        },
+        "xmasmedium3": {
+            "DisplayName": "xmasmedium3",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasmedium3.jpg",
+            "NotBuyable": false
+        },
+        "xmasmedium4": {
+            "DisplayName": "xmasmedium4",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasmedium4.jpg",
+            "NotBuyable": false
+        },
+        "xmasmedium5": {
+            "DisplayName": "xmasmedium5",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/uncredited/xmasmedium5.jpg",
+            "NotBuyable": false
+        },
+        "xmasnightmare1": {
+            "DisplayName": "xmasnightmare1",
+            "Description": "",
+            "Credit": "Apes",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/apes/xmasnightmare1.jpg",
+            "NotBuyable": false
+        },
+        "xmasnightmare2": {
+            "DisplayName": "xmasnightmare2",
+            "Description": "",
+            "Credit": "",
+            "ImageUrl": "https://raw.githubusercontent.com/thittesdorf/RustImages/main/uncredited/xmasnightmare2.jpg",
+            "NotBuyable": false
+        }
+    }
+}
